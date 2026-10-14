@@ -1,148 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Renad Alshahri — Computer Science Graduate specializing in Artificial Intelligence.">
-  <title>Renad Alshahri | AI Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f3ee">
+<meta name="description" content="Renad Alshehri — Computer Science graduate with first-class honours, interested in machine learning and software development.">
+<title>Renad Alshehri | Portfolio</title>
+<style>
+:root{--ink:#17251f;--muted:#65736d;--paper:#f5f3ee;--card:#fffefa;--line:#dfe4dc;--green:#315e4b;--lime:#d7ec8a;--peach:#f0d4c1;--shadow:0 18px 50px #22352a12}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.shell{width:min(1120px,calc(100% - 44px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:18px;font-weight:750;letter-spacing:-.04em}.brand span{color:var(--green)}.navlinks{display:flex;align-items:center;gap:28px;font-size:13px;color:var(--muted)}.navlinks a:hover{color:var(--green)}button{font:inherit}.lang{border:1px solid var(--line);background:var(--card);padding:8px 13px;border-radius:999px;color:var(--ink);cursor:pointer;font-size:12px;font-weight:700}.hero{padding:92px 0 76px;display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border-radius:999px;background:#e7eddf;color:var(--green);font-size:12px;font-weight:700;letter-spacing:.03em}.dot{width:7px;height:7px;border-radius:50%;background:#67976c}.hero h1{font-size:clamp(48px,7vw,82px);line-height:.99;letter-spacing:-.075em;margin:25px 0 22px;max-width:700px}.hero h1 em{font-style:normal;color:var(--green)}.intro{max-width:575px;color:var(--muted);font-size:17px;line-height:1.8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border-radius:12px;background:var(--green);color:white;font-size:13px;font-weight:700;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.btn.secondary{background:var(--card);color:var(--ink);border:1px solid var(--line)}.visual{min-height:330px;position:relative;display:grid;place-items:center}.orb{width:270px;height:270px;border-radius:50%;background:var(--lime);position:absolute;right:45px;top:20px}.card-note{position:relative;z-index:1;background:var(--card);width:min(300px,95%);padding:27px;border:1px solid #e6e8df;border-radius:18px;box-shadow:var(--shadow);transform:rotate(4deg)}.monogram{width:68px;height:68px;background:var(--green);color:white;border-radius:19px;display:grid;place-items:center;font:italic 31px Georgia,serif;margin-bottom:30px}.card-note strong{display:block;font-size:18px;letter-spacing:-.03em}.card-note p{margin:5px 0 0;color:var(--muted);font-size:12px}.mini-tags{display:flex;gap:7px;margin-top:22px;flex-wrap:wrap}.mini-tags span{background:#f1eee7;padding:6px 9px;border-radius:7px;font-size:10px;color:#49564f}.section{padding:64px 0}.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:25px}.kicker{font-size:11px;color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.15em}.section h2{font-size:clamp(29px,4vw,42px);letter-spacing:-.055em;margin:6px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:350px;margin:0}.about{background:#e9eee5;border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about p{margin:0;color:#516058;font-size:15px;line-height:1.9}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:17px;background:#f8f8f2;border-radius:14px}.fact b{display:block;font-size:14px}.fact span{font-size:11px;color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;min-height:244px;transition:transform .2s,box-shadow .2s}.project:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.project-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}.icon{width:42px;height:42px;border-radius:12px;background:#e8eee4;color:var(--green);display:grid;place-items:center;font-weight:800;font-size:15px}.project .type{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700}.project h3{font-size:19px;letter-spacing:-.03em;margin:0 0 8px}.project p{color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 20px}.project-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{font-size:10px;background:#f0eee7;padding:5px 8px;border-radius:6px;color:#4d5c53}.project-link{font-size:12px;font-weight:750;color:var(--green);white-space:nowrap}.project-link:hover{text-decoration:underline}.contact{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:33px;background:var(--green);color:white;border-radius:22px}.contact h2{font-size:30px;letter-spacing:-.05em;margin:4px 0}.contact p{color:#d8e4db;margin:0;font-size:13px}.social{display:flex;gap:10px;flex-wrap:wrap}.social a{padding:10px 13px;border:1px solid #ffffff4a;border-radius:10px;font-size:12px;font-weight:700}.social a:hover{background:#ffffff18}.footer{display:flex;justify-content:space-between;padding:26px 0;color:var(--muted);font-size:11px}.footer b{color:var(--ink)}[dir="rtl"] body{font-family:Tahoma,"Segoe UI",sans-serif}[dir="rtl"] .hero h1,[dir="rtl"] .section h2{letter-spacing:0}[dir="rtl"] .orb{right:auto;left:45px}[dir="rtl"] .card-note{transform:rotate(-4deg)}[dir="rtl"] .navlinks{direction:rtl}[dir="rtl"] .section-head{direction:rtl}[dir="rtl"] .project-top,[dir="rtl"] .project-foot,[dir="rtl"] .contact,[dir="rtl"] .footer{direction:rtl}
+@media(max-width:760px){.nav{height:70px}.navlinks{gap:12px}.navlinks a:nth-child(2){display:none}.hero{grid-template-columns:1fr;padding:63px 0 45px;gap:15px}.visual{min-height:260px}.orb{width:220px;height:220px;right:calc(50% - 150px)}.card-note{width:270px}.projects{grid-template-columns:1fr}.about{grid-template-columns:1fr;padding:25px}.section{padding:45px 0}.section-head{display:block}.section-head p{margin-top:12px}.contact{display:block}.social{margin-top:22px}.footer{gap:14px;flex-wrap:wrap}}@media(max-width:430px){.shell{width:min(100% - 30px,1120px)}.navlinks{gap:9px}.navlinks a{font-size:11px}.hero h1{font-size:51px}.intro{font-size:15px}.project{padding:20px}.project-foot{align-items:flex-start;flex-direction:column}.project-link{white-space:normal}}
+.credential-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.credential{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:17px;min-height:100px;display:flex;flex-direction:column;justify-content:space-between}.credential span{font-size:10px;color:var(--green);font-weight:750;letter-spacing:.03em}.credential b{font-size:13px;line-height:1.45}.credential.training{grid-column:span 3;background:#e9eee5}.credential p{margin:8px 0 0;color:var(--muted);font-size:12px}.credential-grid{direction:ltr}
+@media(max-width:760px){.credential-grid{grid-template-columns:repeat(2,1fr)}.credential.training{grid-column:span 2}}
+@media(max-width:430px){.credential-grid{grid-template-columns:1fr}.credential.training{grid-column:auto}}
+</style>
+<style>
+.theme-toggle{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px;color:var(--ink);cursor:pointer;font-size:12px;font-weight:700;white-space:nowrap}
+.featured{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:34px;padding:38px;background:#e9eee5;border:1px solid var(--line);border-radius:24px}
+.feature-copy h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.06em;margin:10px 0}.feature-copy h2 span{font-size:.6em;color:var(--green);margin-inline-start:8px}.feature-copy p{max-width:570px;color:var(--muted);font-size:14px;line-height:1.85}.feature-copy .tags{margin:20px 0}.feature-link{margin-top:4px}.feature-art{min-height:235px;border-radius:20px;background:var(--green);color:white;padding:25px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}.route-label{font-size:27px;font-weight:800}.route-label span{display:block;font:10px Inter,sans-serif;letter-spacing:.22em;opacity:.7}.route-line{height:3px;background:#ffffff65;position:relative;margin:30px 5px}.route-line:before{content:"";position:absolute;inset-inline-start:12%;inset-inline-end:12%;height:3px;background:var(--lime)}.route-line i{position:absolute;top:-6px;width:15px;height:15px;border:3px solid white;border-radius:50%;background:var(--green)}.route-line i:nth-child(1){inset-inline-start:8%}.route-line i:nth-child(2){inset-inline-start:48%;background:var(--lime)}.route-line i:nth-child(3){inset-inline-end:8%}.route-card{background:#ffffffeb;color:#1e2b23;padding:15px 17px;border-radius:13px;display:flex;flex-direction:column;gap:4px}.route-card small{font-size:9px;letter-spacing:.14em;color:#637268}.route-card b{font-size:16px}.route-card span{font-size:10px;color:#68776e}
+html[data-theme="dark"]{--ink:#e8eee9;--muted:#a7b3aa;--paper:#111813;--card:#1b261f;--line:#344239;--green:#a6c9a6;--lime:#596b4c;--shadow:0 18px 50px #0005;color-scheme:dark}
+html[data-theme="dark"] .eyebrow,html[data-theme="dark"] .about,html[data-theme="dark"] .credential.training{background:#253329;color:var(--ink)}html[data-theme="dark"] .fact,html[data-theme="dark"] .mini-tags span,html[data-theme="dark"] .tags span{background:#202b24;color:var(--ink)}html[data-theme="dark"] .project .icon{background:#26382c}html[data-theme="dark"] .card-note{border-color:var(--line)}html[data-theme="dark"] .contact{background:#263b30}html[data-theme="dark"] .featured{background:#202b24}html[data-theme="dark"] .feature-art{background:#304b39}html[data-theme="dark"] .route-card{background:#eef1e9;color:#1e2b23}
+@media(max-width:760px){.featured{grid-template-columns:1fr;padding:25px}.feature-art{min-height:215px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.navlinks{gap:8px}.theme-toggle{padding:7px 9px}}
+</style>
+<style>
+.network{position:absolute;inset:0;width:100%;height:100%;z-index:0;overflow:visible;touch-action:pan-y}.visual{isolation:isolate}.visual .orb{z-index:-1}.network-hint{position:absolute;z-index:2;bottom:2px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--muted);white-space:nowrap;opacity:.8;pointer-events:none}.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}.reveal.is-visible{opacity:1;transform:translateY(0)}.project.is-tilting{transform:perspective(850px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-5px);box-shadow:var(--shadow)}.project.is-tilting .icon{transform:scale(1.08) rotate(-5deg);transition:transform .2s ease}.project .icon{transition:transform .25s ease}
+@media(max-width:760px){.network-hint{bottom:-8px}.visual{overflow:hidden}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="logo" href="#home">RA<span>.</span></a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </div>
-    </nav>
-  </header>
+<div class="shell">
+<header class="nav">
+<a class="brand" href="#top" data-en="Renad Alshehri" data-ar="ريناد الشهري">Renad <span>Alshehri</span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#about" data-en="About" data-ar="نبذة">About</a><a href="#masarak" data-en="Graduation project" data-ar="مشروع التخرج">Graduation project</a><a href="#projects" data-en="University projects" data-ar="مشاريع الجامعة">University projects</a><a href="#credentials" data-en="Credentials" data-ar="الشهادات">Credentials</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a><button class="theme-toggle" id="theme" type="button" aria-label="Toggle night mode"><span class="theme-icon">☾</span> <span data-en="Night" data-ar="ليلي">Night</span></button><button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button></nav>
+</header>
+<main id="top">
+<section class="hero">
+<div><div class="eyebrow"><span class="dot"></span><span data-en="COMPUTER SCIENCE GRADUATE · FIRST-CLASS HONOURS" data-ar="خريجة علوم حاسب · مرتبة الشرف الأولى">COMPUTER SCIENCE GRADUATE · FIRST-CLASS HONOURS</span></div>
+<h1 data-en="Hello, I’m <em>Renad.</em>" data-ar="مرحبًا، أنا <em>ريناد.</em>">Hello, I’m <em>Renad.</em></h1>
+<p class="intro" data-en="I’m a Computer Science graduate from King Khalid University, specializing in Artificial Intelligence and graduating with First-Class Honors. I’m interested in machine learning, intelligent systems, and practical software." data-ar="خريجة علوم الحاسب من جامعة الملك خالد، بتخصص الذكاء الاصطناعي ومرتبة الشرف الأولى. أهتم بتعلم الآلة والأنظمة الذكية وتطوير حلول برمجية عملية.">I’m a Computer Science graduate from King Khalid University, specializing in Artificial Intelligence and graduating with First-Class Honors. I’m interested in machine learning, intelligent systems, and practical software.</p>
+<div class="actions"><a class="btn" href="#projects"><span data-en="Explore my projects" data-ar="تصفحي مشاريعي">Explore my projects</span><span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://github.com/Renad135" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+<div class="visual" aria-label="Interactive neural network illustration"><canvas class="network" id="neural-network" aria-hidden="true"></canvas><div class="orb"></div><div class="card-note"><div class="monogram">RA</div><strong data-en="Renad Alshehri" data-ar="ريناد الشهري">Renad Alshehri</strong><p data-en="Computer Science · Machine Learning" data-ar="علوم الحاسب · تعلم الآلة">Computer Science · Machine Learning</p><div class="mini-tags"><span>Python</span><span>Machine Learning</span><span>AI</span></div></div><span class="network-hint" data-en="Move your pointer · Click to send a signal" data-ar="حرّكي المؤشر · انقري لإرسال إشارة">Move your pointer · Click to send a signal</span></div>
+</section>
+<section class="featured section" id="masarak"><div class="feature-copy"><div class="kicker" data-en="Graduation project · Featured" data-ar="مشروع التخرج · مميز">Graduation project · Featured</div><h2>Masarak <span>مسارك</span></h2><p data-en="A bilingual Arabic/English web application that helps high-school students explore university majors and career paths using academic information and interests. It includes a separate Random Forest career recommender." data-ar="تطبيق ويب ثنائي اللغة يساعد طلاب المرحلة الثانوية على استكشاف التخصصات الجامعية والمسارات المهنية وفق معلوماتهم الأكاديمية واهتماماتهم، ويتضمن نظام توصية مهنيًا منفصلًا بخوارزمية Random Forest.">A bilingual Arabic/English web application that helps high-school students explore university majors and career paths using academic information and interests. It includes a separate Random Forest career recommender.</p><div class="tags"><span>PHP · MySQL</span><span>Python</span><span>Random Forest</span></div><a class="btn feature-link" href="https://github.com/Renad135/masarak-career-guidance" target="_blank" rel="noreferrer"><span data-en="Explore the graduation project" data-ar="استكشفي مشروع التخرج">Explore the graduation project</span> ↗</a></div><div class="feature-art" aria-hidden="true"><div class="route-label">مسارك <span>MASARAK</span></div><div class="route-line"><i></i><i></i><i></i></div><div class="route-card"><small>YOUR NEXT STEP</small><b>Explore. Choose. Grow.</b><span>AI · Guidance · Future</span></div></div></section>
+<section class="section" id="about"><div class="section-head"><div><div class="kicker" data-en="A little about me" data-ar="نبذة عني">A little about me</div><h2 data-en="Curious by nature." data-ar="شغوفة بالتعلم.">Curious by nature.</h2></div><p data-en="I enjoy exploring how data and algorithms can turn complex questions into practical ideas." data-ar="أستمتع باستكشاف كيف يمكن للبيانات والخوارزميات تحويل الأسئلة المعقدة إلى أفكار عملية.">I enjoy exploring how data and algorithms can turn complex questions into practical ideas.</p></div>
+<div class="about"><p data-en="I earned a Bachelor’s degree in Computer Science with an Artificial Intelligence concentration from King Khalid University, graduating with First-Class Honors. My coursework and projects built experience in machine learning, model evaluation, Python, Java, HTML, and CSS. I also completed a two-month Huawei ICT Academy Summer Training Camp in 2025 covering cloud computing, DATACOM, AI, cloud services, and openEuler." data-ar="حصلت على بكالوريوس علوم الحاسب بتخصص الذكاء الاصطناعي من جامعة الملك خالد مع مرتبة الشرف الأولى. طورت خلال دراستي خبرة في تعلم الآلة وتقييم النماذج وPython وJava وHTML وCSS. كما أكملت معسكر هواوي الصيفي للتدريب لمدة شهرين عام 2025، وتناول الحوسبة السحابية وDATACOM والذكاء الاصطناعي والخدمات السحابية وopenEuler.">I earned a Bachelor’s degree in Computer Science with an Artificial Intelligence concentration from King Khalid University, graduating with First-Class Honors. My coursework and projects built experience in machine learning, model evaluation, Python, Java, HTML, and CSS. I also completed a two-month Huawei ICT Academy Summer Training Camp in 2025 covering cloud computing, DATACOM, AI, cloud services, and openEuler.</p><div class="facts"><div class="fact"><b data-en="First-Class Honours" data-ar="مرتبة الشرف الأولى">First-Class Honours</b><span data-en="Academic achievement" data-ar="إنجاز أكاديمي">Academic achievement</span></div><div class="fact"><b data-en="Machine Learning" data-ar="تعلم الآلة">Machine Learning</b><span data-en="Area of interest" data-ar="مجال اهتمام">Area of interest</span></div><div class="fact"><b>Python · Java</b><span data-en="Programming languages" data-ar="لغات البرمجة">Programming languages</span></div><div class="fact"><b>HTML · CSS</b><span data-en="Web technologies" data-ar="تقنيات الويب">Web technologies</span></div></div></div></section>
+<section class="section" id="credentials"><div class="section-head"><div><div class="kicker" data-en="Learning & credentials" data-ar="التعلم والشهادات">Learning & credentials</div><h2 data-en="Always learning." data-ar="أتعلم باستمرار.">Always learning.</h2></div><p data-en="Selected credentials listed on my LinkedIn profile." data-ar="مجموعة مختارة من الشهادات المدرجة في ملفي على LinkedIn.">Selected credentials listed on my LinkedIn profile.</p></div><div class="credential-grid"><div class="credential"><span>2025 · Stanford Online</span><b>Machine Learning</b></div><div class="credential"><span>2025 · DeepLearning.AI</span><b>Advanced Learning Algorithms</b></div><div class="credential"><span>2025 · DeepLearning.AI</span><b>Supervised Machine Learning: Regression and Classification</b></div><div class="credential"><span>2025 · Huawei</span><b>HCIA-AI V3.5 Course</b></div><div class="credential"><span>2025 · SDAIA</span><b>Principles of Artificial Intelligence</b></div><div class="credential"><span>2026 · King Khalid University</span><b>Introduction to Agentic AI &amp; LLM Architectures</b></div><div class="credential"><span>2025 · IBM</span><b>Building Generative AI-Powered Applications with Python</b></div><div class="credential"><span>2023 · Misk Skills</span><b>Data Analysis</b></div><div class="credential training"><span data-en="Two-month program · 2025" data-ar="برنامج تدريبي لمدة شهرين · 2025">Two-month program · 2025</span><b>Huawei ICT Academy Summer Training Camp</b><p data-en="Cloud Computing · DATACOM · AI · Cloud Services · openEuler" data-ar="الحوسبة السحابية · DATACOM · الذكاء الاصطناعي · الخدمات السحابية · openEuler">Cloud Computing · DATACOM · AI · Cloud Services · openEuler</p></div></div></section>
+<section class="section" id="projects"><div class="section-head"><div><div class="kicker" data-en="University coursework" data-ar="مشاريع ومقررات الجامعة">University coursework</div><h2 data-en="Class projects." data-ar="مشاريع الجامعة.">Class projects.</h2></div><p data-en="Selected machine-learning and algorithm projects completed during university classes." data-ar="مشاريع مختارة في تعلم الآلة والخوارزميات نُفذت ضمن المقررات الجامعية.">Selected machine-learning and algorithm projects completed during university classes.</p></div>
+<div class="projects">
+<article class="project"><div class="project-top"><div class="icon">NN</div><span class="type" data-en="Neural networks" data-ar="شبكات عصبية">Neural networks</span></div><h3 data-en="MNIST Neural Network & Fuzzy Confidence" data-ar="شبكة عصبية ودرجة الثقة الضبابية على MNIST">MNIST Neural Network & Fuzzy Confidence</h3><p data-en="A class project comparing neural-network approaches for handwritten-digit recognition, with error analysis and a fuzzy confidence decision." data-ar="مشروع جامعي يقارن أساليب الشبكات العصبية للتعرف على الأرقام المكتوبة يدويًا، مع تحليل الأخطاء وآلية ثقة ضبابية.">A class project comparing neural-network approaches for handwritten-digit recognition, with error analysis and a fuzzy confidence decision.</p><div class="project-foot"><div class="tags"><span>TensorFlow</span><span>CNN</span><span>MNIST</span></div><a class="project-link" href="https://github.com/Renad135/university-class-projects/blob/main/projects/neural-network-fuzzy-mnist/project_NF.ipynb" target="_blank" rel="noreferrer"><span data-en="View notebook" data-ar="عرض الدفتر">View notebook</span> ↗</a></div></article>
+<article class="project"><div class="project-top"><div class="icon">DT</div><span class="type" data-en="Classification" data-ar="تصنيف البيانات">Classification</span></div><h3 data-en="Water Quality Decision Tree" data-ar="شجرة قرار لجودة المياه">Water Quality Decision Tree</h3><p data-en="A decision-tree exercise using chemical and biological measurements to classify water-sample safety. Requires the course CSV dataset to run." data-ar="تطبيق لخوارزمية شجرة القرار لتصنيف سلامة عينات المياه اعتمادًا على قياسات كيميائية وبيولوجية. يتطلب ملف البيانات المرفق بالمقرر للتشغيل.">A decision-tree exercise using chemical and biological measurements to classify water-sample safety. Requires the course CSV dataset to run.</p><div class="project-foot"><div class="tags"><span>Scikit-learn</span><span>Decision Tree</span><span>Python</span></div><a class="project-link" href="https://github.com/Renad135/university-class-projects/tree/main/projects/water-quality-decision-tree" target="_blank" rel="noreferrer"><span data-en="View project" data-ar="عرض المشروع">View project</span> ↗</a></div></article>
+</div></section>
+<section class="section" id="contact"><div class="contact"><div><div class="kicker" style="color:#d7ec8a" data-en="Let’s connect" data-ar="لنتواصل">Let’s connect</div><h2 data-en="Find me online." data-ar="تجدينني هنا.">Find me online.</h2><p data-en="Explore my work or connect with me professionally." data-ar="اطلعي على أعمالي أو تواصلي معي مهنيًا.">Explore my work or connect with me professionally.</p></div><div class="social"><a href="https://github.com/Renad135" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/renad-alshehri-aa0b8634b/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+</main>
+<footer class="footer"><span>© <span id="year"></span> <b>Renad Alshehri</b></span><span data-en="Designed for a growing portfolio" data-ar="معرض أعمال يتطور باستمرار">Designed for a growing portfolio</span></footer>
+</div>
+<script>
+const langButton=document.getElementById('lang');let current='en';function setLang(lang){current=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-en][data-ar]').forEach(el=>el.innerHTML=el.dataset[lang]);langButton.textContent=lang==='en'?'العربية':'English';langButton.setAttribute('aria-label',lang==='en'?'Switch to Arabic':'Switch to English')}langButton.addEventListener('click',()=>setLang(current==='en'?'ar':'en'));document.getElementById('year').textContent=new Date().getFullYear();const themeButton=document.getElementById('theme');let theme=localStorage.getItem('renad-portfolio-theme')||'light';function setTheme(){document.documentElement.dataset.theme=theme;themeButton.querySelector('.theme-icon').textContent=theme==='light'?'☾':'☀';themeButton.setAttribute('aria-pressed',theme==='dark'?'true':'false')}setTheme();themeButton.addEventListener('click',()=>{theme=theme==='light'?'dark':'light';localStorage.setItem('renad-portfolio-theme',theme);setTheme()});
 
-  <main>
-    <section id="home" class="hero">
-      <div class="glow glow-one"></div><div class="glow glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">COMPUTER SCIENCE • ARTIFICIAL INTELLIGENCE</p>
-          <h1>Hi, I'm <span>Renad</span>.<br>I build intelligent digital experiences.</h1>
-          <p class="hero-text">Computer Science graduate from King Khalid University, specializing in Artificial Intelligence, with hands-on experience in machine learning, Python, and web application development.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View my work ↗</a>
-            <a class="btn secondary" href="Renad Alshahri Resume.pdf" download>Download CV ↓</a>
-          </div>
-          <div class="quick-stats">
-            <div><strong>2026</strong><span>Graduate</span></div>
-            <div><strong>1st</strong><span>Honor</span></div>
-            <div><strong>AI</strong><span>Specialization</span></div>
-          </div>
-        </div>
-        <div class="hero-card reveal">
-          <div class="orb"><span>AI</span></div>
-          <div class="code-card">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <pre><code><span class="pink">model</span> = RandomForestClassifier()
-<span class="pink">model</span>.fit(X_train, y_train)
+// A small interactive neural network: cursor movement focuses nearby neurons;
+// clicking sends a visible signal through the graph. Motion pauses off-screen.
+const surface=document.querySelector('.visual'),canvas=document.getElementById('neural-network'),ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const layerDefs=[[.12,[.20,.40,.60,.80]],[.50,[.12,.28,.44,.60,.76,.90]],[.88,[.28,.50,.72]]];
+const neurons=layerDefs.flatMap(([x,ys],layer)=>ys.map((y,index)=>({x,y,layer,index,phase:Math.random()*Math.PI*2}))),edges=[];
+const grouped=[neurons.filter(n=>n.layer===0),neurons.filter(n=>n.layer===1),neurons.filter(n=>n.layer===2)];grouped[0].forEach((a,i)=>grouped[1].forEach((b,j)=>{if(Math.abs(i/3-j/5)<.72)edges.push([a,b])}));grouped[1].forEach((a,i)=>grouped[2].forEach((b,j)=>{if(Math.abs(i/5-j/2)<.82)edges.push([a,b])}));
+const pointer={x:.5,y:.5,active:false};let signal=null,raf=0,visible=false,lastFrame=0,view={w:1,h:1};
+function resizeNetwork(){const r=surface.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);view={w:r.width,h:r.height};canvas.width=Math.round(r.width*dpr);canvas.height=Math.round(r.height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);drawNetwork(performance.now())}
+function drawNetwork(now){const t=now/1000,color=getComputedStyle(document.documentElement).getPropertyValue('--green').trim()||'#315e4b',paper=getComputedStyle(document.documentElement).getPropertyValue('--card').trim()||'#fffefa';ctx.clearRect(0,0,view.w,view.h);const px=pointer.x*view.w,py=pointer.y*view.h;
+ for(let i=0;i<edges.length;i++){const[a,b]=edges[i],ax=a.x*view.w,ay=a.y*view.h,bx=b.x*view.w,by=b.y*view.h,mx=(ax+bx)/2,my=(ay+by)/2,d=Math.hypot(px-mx,py-my),focus=pointer.active?Math.max(0,1-d/150):0;ctx.beginPath();ctx.moveTo(ax,ay);ctx.lineTo(bx,by);ctx.strokeStyle=color;ctx.globalAlpha=.12+focus*.52;ctx.lineWidth=.7+focus*1.1;ctx.stroke();ctx.globalAlpha=1;if(i%4===0){const u=(t*.24+i*.193)%1,x=ax+(bx-ax)*u,y=ay+(by-ay)*u;ctx.beginPath();ctx.arc(x,y,1.4+focus,0,Math.PI*2);ctx.fillStyle=color;ctx.globalAlpha=.35+focus*.65;ctx.fill();ctx.globalAlpha=1}}
+ for(const n of neurons){const x=n.x*view.w,y=n.y*view.h+Math.sin(t*1.15+n.phase)*(reduced.matches?0:2.8),d=Math.hypot(px-x,py-y),focus=pointer.active?Math.max(0,1-d/125):0,r=3.1+Math.sin(t*1.7+n.phase)*.45+focus*2.4;ctx.beginPath();ctx.arc(x,y,r+5+focus*4,0,Math.PI*2);ctx.fillStyle=color;ctx.globalAlpha=.045+focus*.13;ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=color;ctx.globalAlpha=.55+focus*.45;ctx.fill();ctx.beginPath();ctx.arc(x,y,Math.max(1,r*.34),0,Math.PI*2);ctx.fillStyle=paper;ctx.globalAlpha=.9;ctx.fill();ctx.globalAlpha=1}
+ if(signal){const age=(now-signal.start)/950;if(age<1){const radius=age*190;ctx.beginPath();ctx.arc(signal.x*view.w,signal.y*view.h,radius,0,Math.PI*2);ctx.strokeStyle=color;ctx.lineWidth=2*(1-age);ctx.globalAlpha=1-age;ctx.stroke();ctx.globalAlpha=1}else signal=null}}
+function animateNetwork(now){raf=0;if(!visible)return;if(now-lastFrame>30){drawNetwork(now);lastFrame=now}if(!reduced.matches)raf=requestAnimationFrame(animateNetwork)}
+function startNetwork(){if(!raf&&!reduced.matches)raf=requestAnimationFrame(animateNetwork);else drawNetwork(performance.now())}
+const networkObserver=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)startNetwork();else if(raf){cancelAnimationFrame(raf);raf=0}},{threshold:.05});networkObserver.observe(surface);new ResizeObserver(resizeNetwork).observe(surface);resizeNetwork();
+surface.addEventListener('pointermove',e=>{const r=surface.getBoundingClientRect();pointer.x=(e.clientX-r.left)/r.width;pointer.y=(e.clientY-r.top)/r.height;pointer.active=true;if(reduced.matches)drawNetwork(performance.now())});surface.addEventListener('pointerleave',()=>{pointer.active=false;if(reduced.matches)drawNetwork(performance.now())});surface.addEventListener('click',e=>{const r=surface.getBoundingClientRect();signal={x:(e.clientX-r.left)/r.width,y:(e.clientY-r.top)/r.height,start:performance.now()};startNetwork()});reduced.addEventListener('change',()=>{if(reduced.matches&&raf){cancelAnimationFrame(raf);raf=0;drawNetwork(performance.now())}else if(visible)startNetwork()});
 
-prediction = model.predict(X_test)
-<span class="green"># Build. Learn. Deploy.</span></code></pre>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container split">
-        <div class="section-heading reveal"><p class="eyebrow">01 — ABOUT ME</p><h2>Turning curiosity into <span>useful technology.</span></h2></div>
-        <div class="about-copy reveal">
-          <p>I’m a Computer Science graduate from King Khalid University with First Honors and an Artificial Intelligence track.</p>
-          <p>My experience combines machine learning, data analysis, and full-stack web development. My graduation project, MASARAK, brought these skills together in a practical AI-powered platform for Saudi high school students.</p>
-          <div class="mini-card"><b>Based in</b><span>Abha, Saudi Arabia</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-dark">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">02 — SKILLS</p><h2>Tools I use to <span>build.</span></h2></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><span class="skill-no">01</span><h3>AI & Machine Learning</h3><p>Machine Learning · Random Forest · Scikit-learn · Data Analysis</p></article>
-          <article class="skill-card reveal"><span class="skill-no">02</span><h3>Programming</h3><p>Python · SQL · HTML · CSS</p></article>
-          <article class="skill-card reveal"><span class="skill-no">03</span><h3>Web Development</h3><p>Web App Development · Flask · Full-stack foundations</p></article>
-          <article class="skill-card reveal"><span class="skill-no">04</span><h3>Tools</h3><p>Git · Microsoft Word · PowerPoint · Excel</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">03 — FEATURED PROJECT</p><h2>One project, <span>real impact.</span></h2></div>
-        <article class="project reveal">
-          <div class="project-top"><span class="tag">Graduation Project</span><span>2026</span></div>
-          <h3>MASARAK</h3>
-          <p class="project-subtitle">AI-Based University Major Recommendation Platform</p>
-          <p>Designed and developed a web platform that recommends university majors to Saudi high school students using a Random Forest classifier.</p>
-          <div class="project-grid">
-            <div><b>My role</b><span>Team of 4 · System architecture · ML model · Web interface</span></div>
-            <div><b>ML pipeline</b><span>Data preparation · Training · Evaluation · Deployment</span></div>
-            <div><b>Stack</b><span>Python · Random Forest · Scikit-learn · Flask · HTML/CSS</span></div>
-            <div><b>Supervisor</b><span>Dr. Sajid Ali Khan</span></div>
-          </div>
-          <div class="project-quote">“From student interests to a data-driven recommendation.”</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section section-dark">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">04 — EXPERIENCE</p><h2>Learning through <span>hands-on work.</span></h2></div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-date">SUMMER 2025</div>
-            <div><h3>IT Intern — Huawei</h3><p>Completed a hands-on internship supporting IT operations and gained exposure to enterprise technology systems and workflows. Collaborated with technical teams and applied problem-solving skills in a fast-paced corporate environment.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications" class="section">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">05 — CERTIFICATIONS</p><h2>Continuous <span>learning.</span></h2></div>
-        <div class="cert-list">
-          <div class="cert reveal"><span>01</span><div><h3>Machine Learning Specialization</h3><p>Stanford Online / DeepLearning.AI · 2025</p></div></div>
-          <div class="cert reveal"><span>02</span><div><h3>Introduction to TensorFlow for AI, Machine Learning, and Deep Learning</h3><p>DeepLearning.AI · 2025</p></div></div>
-          <div class="cert reveal"><span>03</span><div><h3>HCIA-AI V3.5</h3><p>Huawei · 2025</p></div></div>
-          <div class="cert reveal"><span>04</span><div><h3>Principles of Artificial Intelligence</h3><p>SDAIA · 2025</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section section-dark">
-      <div class="container split">
-        <div class="section-heading reveal"><p class="eyebrow">06 — EDUCATION</p><h2>Academic <span>foundation.</span></h2></div>
-        <div class="edu-card reveal"><span class="edu-year">2026</span><h3>B.Sc. in Computer Science</h3><p>Artificial Intelligence Track</p><p>King Khalid University — College of Computer Science, Abha, Saudi Arabia</p><strong>Graduated with First Honors</strong></div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container contact-inner reveal">
-        <p class="eyebrow">07 — CONTACT</p>
-        <h2>Let's build something <span>meaningful.</span></h2>
-        <p>I'm open to opportunities in Artificial Intelligence, Data, and Computer Science.</p>
-        <a class="email-link" href="mailto:Renad3040@gmail.com">Renad3040@gmail.com ↗</a>
-        <div class="socials">
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer><div class="container"><span>RENAD ALSHAHRI</span><span>Computer Science • AI</span><span>© 2026</span></div></footer>
-  <script src="script.js"></script>
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.featured,.section-head,.project,.credential,.contact').forEach(el=>{el.classList.add('reveal');revealObserver.observe(el)});
+if(matchMedia('(hover: hover) and (pointer: fine)').matches&&!reduced.matches){document.querySelectorAll('.project').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.setProperty('--rx',`${-y*5}deg`);card.style.setProperty('--ry',`${x*6}deg`);card.classList.add('is-tilting')});card.addEventListener('pointerleave',()=>{card.classList.remove('is-tilting');card.style.removeProperty('--rx');card.style.removeProperty('--ry')})})}
+</script>
 </body>
 </html>
